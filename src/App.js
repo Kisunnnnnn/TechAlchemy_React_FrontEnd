@@ -4,6 +4,7 @@ import Login from './components/authentication/login';
 import PrivateRoute from './components/authentication/PrivateRoute';
 import Signup from './components/authentication/Signup';
 import Header from './components/Header';
+import Sort from './components/Sort';
 import Home from './components/users/Home';
 import WeatherData from './components/users/WeatherData';
 
@@ -15,6 +16,7 @@ function App() {
           <Header />
           <Routes>
             <Route path='/' element={<Login />} />
+            <Route path='/sort' element={<Sort />} />
             <Route path='/signup' element={<Signup />} />
             <Route path='/weatherData' element={<WeatherData />} />
             <Route path='/home' element={<PrivateRoute component={Home} />} />

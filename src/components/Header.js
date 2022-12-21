@@ -23,6 +23,9 @@ const Header = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         {!email && <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
                             <li className="nav-item">
+                                <Link className="nav-link" to="/sort">Sort(Task1)</Link>
+                            </li>
+                            <li className="nav-item">
                                 <Link className="nav-link active" aria-current="page" to='/weatherData'>Weather</Link>
                             </li>
                             <li className="nav-item">
